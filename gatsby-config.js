@@ -1,9 +1,11 @@
 const lost = require('lost')
 const pxtorem = require('postcss-pxtorem')
+const url = 'https://yooylee.netlify.com'
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://yooylee.netlify.com',
+    url,
+    siteUrl: url,
     title: 'Blog by Yoo Young Lee',
     subtitle:
       'Continuous learner - Open knowledge, Open data, Open source',
@@ -42,7 +44,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                site_url: url
+                url
                 title
                 description: subtitle
               }
@@ -56,8 +58,8 @@ module.exports = {
                 Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.frontmatter.description,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.site_url + edge.node.fields.slug,
-                  guid: site.siteMetadata.site_url + edge.node.fields.slug,
+                  url: site.siteMetadata.url + edge.node.fields.slug,
+                  guid: site.siteMetadata.url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               ),
@@ -123,39 +125,7 @@ module.exports = {
         fonts: ['roboto:400,400i,500,700'],
       },
     },
-    {
-      resolve: 'gatsby-plugin-sitemap',
-      options: {
-        query: `
-            {
-              site {
-                siteMetadata {
-                  url
-                }
-              }
-              allSitePage(
-                filter: {
-                  path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
-                }
-              ) {
-                edges {
-                  node {
-                    path
-                  }
-                }
-              }
-          }`,
-        output: '/sitemap.xml',
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.url + edge.node.path,
-              changefreq: 'daily',
-              priority: 0.7,
-            }
-          }),
-      },
-    },
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
