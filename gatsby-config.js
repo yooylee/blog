@@ -3,7 +3,7 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://yooylee.netlify.com',
+    siteUrl: 'https://yooylee.netlify.com',
     title: 'Blog by Yoo Young Lee',
     subtitle:
       'Continuous learner - Open knowledge, Open data, Open source',
