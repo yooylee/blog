@@ -1,23 +1,26 @@
-import { ICONS } from "@/constants";
-import { getIcon } from "@/utils";
+import { describe, expect, test } from "bun:test";
+
+import { icons } from "@/constants/icons";
+
+import { getIcon } from "./get-icon";
 
 describe("getIcon", () => {
   test("successful return icon", () => {
-    expect(getIcon("rss")).toEqual(ICONS.rss);
-    expect(getIcon("line")).toEqual(ICONS.line);
-    expect(getIcon("github")).toBe(ICONS.github);
-    expect(getIcon("email")).toEqual(ICONS.email);
-    expect(getIcon("weibo")).toEqual(ICONS.weibo);
-    expect(getIcon("twitter")).toBe(ICONS.twitter);
-    expect(getIcon("gitlab")).toEqual(ICONS.gitlab);
-    expect(getIcon("medium")).toEqual(ICONS.medium);
-    expect(getIcon("codepen")).toEqual(ICONS.codepen);
-    expect(getIcon("youtube")).toEqual(ICONS.youtube);
-    expect(getIcon("facebook")).toEqual(ICONS.facebook);
-    expect(getIcon("telegram")).toEqual(ICONS.telegram);
-    expect(getIcon("linkedin")).toEqual(ICONS.linkedin);
-    expect(getIcon("instagram")).toEqual(ICONS.instagram);
-    expect(getIcon("soundcloud")).toEqual(ICONS.soundcloud);
-    expect(getIcon("mastodon")).toEqual(ICONS.mastodon);
+    expect(getIcon("x")).toBe(icons.x);
+    expect(getIcon("rss")).toEqual(icons.rss);
+    expect(getIcon("line")).toEqual(icons.line);
+    expect(getIcon("github")).toBe(icons.github);
+    expect(getIcon("email")).toEqual(icons.email);
+    expect(getIcon("weibo")).toEqual(icons.weibo);
+    expect(getIcon("gitlab")).toEqual(icons.gitlab);
+    expect(getIcon("medium")).toEqual(icons.medium);
+    expect(getIcon("codepen")).toEqual(icons.codepen);
+    expect(getIcon("youtube")).toEqual(icons.youtube);
+    expect(getIcon("mastodon")).toEqual(icons.mastodon);
+    expect(getIcon("facebook")).toEqual(icons.facebook);
+    expect(getIcon("telegram")).toEqual(icons.telegram);
+    expect(getIcon("linkedin")).toEqual(icons.linkedin);
+    expect(getIcon("instagram")).toEqual(icons.instagram);
+    expect(getIcon("soundcloud")).toEqual(icons.soundcloud);
   });
 });

@@ -1,4 +1,4 @@
-import Edge from "./edge";
+import { type Edge } from "./edge";
 
 interface AllMarkdownRemark {
   edges: Array<Edge>;
@@ -8,4 +8,4 @@ interface AllMarkdownRemark {
   }>;
 }
 
-export default AllMarkdownRemark;
+export { type AllMarkdownRemark };

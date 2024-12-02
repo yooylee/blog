@@ -1,12 +1,12 @@
-import React from "react";
-
+import React, { type ReactNode } from "react";
+import { describe, test, expect } from "bun:test";
 import { CoilProvider } from "@alxshelepenok/diesel";
 import { act, renderHook } from "@testing-library/react";
 
-import { useTheme } from "@/hooks";
+import { useTheme } from "@/hooks/use-theme";
 
 describe("useTheme", () => {
-  const wrapper = ({ children }: { children: React.ReactNode }) => (
+  const wrapper = ({ children }: { children: ReactNode }) => (
     <CoilProvider>{children}</CoilProvider>
   );
 

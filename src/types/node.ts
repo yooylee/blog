@@ -1,11 +1,11 @@
-import Fields from "./fields";
-import Frontmatter from "./frontmatter";
+import { type Fields } from "./fields";
+import { type Frontmatter } from "./frontmatter";
 
 interface Node {
   id: string;
+  html: string;
   fields: Fields;
   frontmatter: Frontmatter;
-  html: string;
 }
 
-export default Node;
+export { type Node };

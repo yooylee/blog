@@ -1,7 +1,7 @@
 import { atom } from "@alxshelepenok/diesel";
 import { useCoilPersistedState } from "@alxshelepenok/diesel-extensions";
 
-import { getDefaultColorMode } from "@/utils";
+import { getDefaultColorMode } from "@/utils/get-default-color-mode";
 
 interface Theme {
   mode: "dark" | "light";
@@ -24,4 +24,4 @@ const useTheme = (): readonly [Theme, () => void] => {
   return [theme, toggle];
 };
 
-export default useTheme;
+export { useTheme };

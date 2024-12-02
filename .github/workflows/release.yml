@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   release:
@@ -11,39 +11,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: 20
+          bun-version: latest
 
-      - name: Cache npm
+      - name: Cache Bun dependencies
+        id: bun-cache
         uses: actions/cache@v4
-        id: npm-cache
         with:
-          path: ~/.npm
-          key: npm-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-          restore-keys:
-            npm-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-            npm-${{ runner.os }}-
+          path: |
+            ~/.bun
+            node_modules
+          key: bun-${{ runner.os }}-${{ hashFiles('bun.lockb') }}
+          restore-keys: |
+            bun-${{ runner.os }}-
 
       - name: Install modules
-        if: steps.npm-modules-cache.outputs.cache-hit != 'true'
-        run: npm ci
-
-      - name: Cache modules
-        id: npm-modules-cache
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: npm-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-            npm-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-            npm-modules-${{ runner.os }}-
+        if: steps.bun-cache.outputs.cache-hit != 'true'
+        run: bun install --frozen-lockfile
 
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run semantic-release
+        run: bun run release

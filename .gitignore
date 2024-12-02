@@ -27,6 +27,9 @@ coverage
 # swc
 .swc
 
+# rope
+.ropeproject
+
 # node-waf configuration
 .lock-wscript
 
@@ -38,4 +41,5 @@ node_modules
 
 # only apps should have lockfiles
 npm-shrinkwrap.json
+package-lock.json
 yarn.lock

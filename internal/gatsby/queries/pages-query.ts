@@ -1,10 +1,10 @@
-import { CreatePagesArgs } from "gatsby";
+import { type CreatePagesArgs } from "gatsby";
 
-import * as types from "../types";
+import { type Edge } from "../../../src/types/edge";
 
-export interface PagesQueryResult {
+interface PagesQueryResult {
   allMarkdownRemark: {
-    edges?: Array<types.Edge>;
+    edges?: Array<Edge>;
   };
 }
 
@@ -30,4 +30,4 @@ const pagesQuery = async (graphql: CreatePagesArgs["graphql"]) => {
   return result?.data?.allMarkdownRemark?.edges ?? [];
 };
 
-export default pagesQuery;
+export { pagesQuery };
