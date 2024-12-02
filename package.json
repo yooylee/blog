@@ -1,8 +1,13 @@
 {
   "name": "lumen",
-  "version": "1.6.274",
+  "version": "1.6.275",
   "description": "A constantly evolving and thoughtful architecture for creating static blogs",
-  "keywords": ["gatsby", "graphql", "react", "blog"],
+  "keywords": [
+    "gatsby",
+    "graphql",
+    "react",
+    "blog"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/alxshelepenok/lumen.git"
