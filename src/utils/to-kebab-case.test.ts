@@ -1,4 +1,6 @@
-import { toKebabCase } from "@/utils";
+import { describe, expect, test } from "bun:test";
+
+import { toKebabCase } from "./to-kebab-case";
 
 describe("toKebabCase", () => {
   test("successful conversion to kebab case", () => {

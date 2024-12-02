@@ -4,4 +4,4 @@ interface Fields {
   tagSlugs?: Array<string>;
 }
 
-export default Fields;
+export { type Fields };

@@ -1,4 +1,4 @@
-import { CreatePagesArgs } from "gatsby";
+import { type CreatePagesArgs } from "gatsby";
 
 interface TagsQueryResult {
   allMarkdownRemark: {
@@ -17,7 +17,7 @@ const tagsQuery = async (graphql: CreatePagesArgs["graphql"]) => {
           frontmatter: { template: { eq: "post" }, draft: { ne: true } }
         }
       ) {
-        group(field: frontmatter___tags) {
+        group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
           totalCount
         }
@@ -28,4 +28,4 @@ const tagsQuery = async (graphql: CreatePagesArgs["graphql"]) => {
   return result?.data?.allMarkdownRemark?.group || [];
 };
 
-export default tagsQuery;
+export { tagsQuery };

@@ -1,23 +1,20 @@
 import React from "react";
 
-import { RenderBodyArgs } from "gatsby";
+import { type RenderBodyArgs } from "gatsby";
 
-import { themeAtomKey } from "@/hooks";
+import { themeAtomKey } from "../../src/hooks/use-theme";
 
-const onRenderBody = ({
-  setHtmlAttributes,
-  setPreBodyComponents,
-}: RenderBodyArgs) => {
+const onRenderBody = ({ setHtmlAttributes, setPreBodyComponents }: RenderBodyArgs) => {
   setPreBodyComponents([
     React.createElement("script", {
-      key: "theme",
+      key: "inline",
       dangerouslySetInnerHTML: {
         __html: `
           void function() {
             var cachedMode;
 
             try {
-              var preferredTheme = JSON.parse(localStorage.getItem('${themeAtomKey}'));
+              var preferredTheme = JSON.parse(localStorage.getItem("${themeAtomKey}"));
 
               if (preferredTheme && preferredTheme.mode) {
                 cachedMode = preferredTheme.mode;
@@ -28,9 +25,9 @@ const onRenderBody = ({
               document.documentElement.className = newTheme;
             }
 
-            var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            var darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-            setTheme(cachedMode || (darkQuery.matches ? 'dark' : 'light'));
+            setTheme(cachedMode || (darkQuery.matches ? "dark" : "light"));
           }()
         `,
       },

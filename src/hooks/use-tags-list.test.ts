@@ -1,11 +1,12 @@
+import { describe, expect, test, beforeEach, mock } from "bun:test";
 import { renderHook } from "@testing-library/react";
 import { StaticQuery, useStaticQuery } from "gatsby";
 
-import { useTagsList } from "@/hooks";
 import * as mocks from "@/mocks";
+import { useTagsList } from "@/hooks/use-tags-list";
 
-const mockedStaticQuery = StaticQuery as jest.Mock;
-const mockedUseStaticQuery = useStaticQuery as jest.Mock;
+const mockedUseStaticQuery = useStaticQuery as ReturnType<typeof mock>;
+const mockedStaticQuery = StaticQuery as unknown as ReturnType<typeof mock>;
 
 describe("useTagsList", () => {
   beforeEach(() => {

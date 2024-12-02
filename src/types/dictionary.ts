@@ -2,4 +2,4 @@ interface Dictionary<T> {
   [key: string]: T;
 }
 
-export default Dictionary;
+export { type Dictionary };

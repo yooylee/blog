@@ -1,5 +1,5 @@
 {
-  "branches": ["master"],
+  "branches": ["main"],
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
@@ -45,7 +45,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "npm version ${nextRelease.version} --no-git-tag-version --allow-same-version",
+        "prepareCmd": "bun run version ${nextRelease.version}",
       }
     ],
     [

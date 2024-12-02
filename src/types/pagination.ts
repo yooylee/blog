@@ -6,4 +6,4 @@ interface Pagination {
   hasNextPage: boolean;
 }
 
-export default Pagination;
+export { type Pagination };

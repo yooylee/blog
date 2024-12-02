@@ -1,7 +1,7 @@
-import Node from "./node";
+import { type Node } from "./node";
 
 interface Edge {
   node: Node;
 }
 
-export default Edge;
+export { type Edge };
