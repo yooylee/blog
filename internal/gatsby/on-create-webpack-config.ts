@@ -1,7 +1,7 @@
 import path from "path";
 
-import { type CreateWebpackConfigArgs } from "gatsby";
 import { type CompilerOptions } from "typescript";
+import { type CreateWebpackConfigArgs } from "gatsby";
 
 import { compilerOptions } from "../../tsconfig.json";
 
