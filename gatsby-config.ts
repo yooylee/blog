@@ -164,7 +164,7 @@ export default {
     {
       resolve: "@sentry/gatsby",
       options: {
-        deleteSourcemapsAfterUpload: true,
+        enableClientWebpackPlugin: false,
       },
     },
     "gatsby-plugin-image",
