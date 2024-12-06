@@ -11,7 +11,8 @@ tags:
   - "Professional development"
 
 description: "I attended the Code4Lib 2019 and this posting is about what I learned from the conference, especially on digital curation and preservation. There were amazing presentations on machine learning, accessibility, and etc., but I would like to reflect on this topic as this is one of my current projects at uOttawa Library."
-socialImage: "/content/logo.png"
+socialImage: "./RStudio-Project.jpg"
+
 ---
 
 It has been already almost two weeks since I was back from the Code4Lib 2019 conference. Since I was selected as one of the Diversity Scholarships recipients in 2017, I have tried to attend the Code4Lib conferences and be involved in the community. Code4Lib is one of my favorite conferences for its quality and community and this year was really amazing. I learned a lot and met a great group of people. Then, I would like to briefly reflect on the Code4Lib 2019 conference.
