@@ -9,7 +9,7 @@ tags:
   - "Blog"
   - "Tools"
 description: "This is my very first blog posting. I’d like to talk about tools I used to start my blog."
-socialImage: ""
+socialImage: false
 ---
 
 I’ve always wanted to have a blog and every year it comes to my list as one of my new year resolutions. However, this year I took a different approach - no resolution, but just do it. Don’t worry about my English writing, don’t be afraid of making mistakes, stop worrying and thinking… Then, voilà - here is my blog!
