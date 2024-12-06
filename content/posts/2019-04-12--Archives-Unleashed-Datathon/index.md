@@ -9,7 +9,7 @@ tags:
   - "Web archiving"
   - "Tools"
 description: "I would like to share my participation in the Archives Unleashed Datathon #Washington held from March 21 to March 22, 2019 at the Gelman Library, George Washington University. It was an amazing opportunity for me to learn new tools, consider how to use the Archives Unleashed Toolkit in the curation, and explore how researchers would use web collections to answer their research questions."
-socialImage:"./AUT.jpg"
+socialImage: "./AUT.jpg"
 ---
 
 *Disclaimer: The whole notion of web archiving is new for me. My very first project to embark on web archiving was done only in 2017. I am currently learning about it and what I am saying in this post would be incorrect or could change along the way I learn. Moreover, I’d like to thank to all organizers (Ian Milligan, Laura Wrubel, Dan Kerchner, Rachel Trent, Robin Delaloye, Nick Ruest, Jimmy Lin, and Samantha Fritz) and all participants.*
