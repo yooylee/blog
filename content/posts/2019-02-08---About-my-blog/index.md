@@ -3,7 +3,7 @@ title: "Tools I used to start my blog"
 date: "2019-02-08"
 template: "post"
 draft: false
-path: "/posts/tools-i-used-to-start-my-blog"
+slug: "/posts/tools-i-used-to-start-my-blog"
 category: "General"
 tags:
   - "Blog"
