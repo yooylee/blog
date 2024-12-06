@@ -1,37 +1,33 @@
 {
-  "title": "Blog by John Doe",
-  "url": "https://lumen.alxshelepenok.com",
+  "title": "Blog by Yoo Young Lee",
+  "url": "https://yooylee.netlify.com",
   "description": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
-  "copyright": "© All rights reserved.",
-  "googleAnalyticsId": "UA-73379983-2",
+  "copyright": "This blog by Yoo Young Lee is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License",
+  "googleAnalyticsId": "G-Q4RGB2LVP1",
   "pathPrefix": "/",
   "feedLimit": 4,
   "menu": [
     {
-      "title": "Articles",
+      "title": "Blogs",
       "url": "/"
     },
     {
       "title": "About me",
       "url": "/pages/about"
-    },
-    {
-      "title": "Contact me",
-      "url": "/pages/contacts"
     }
   ],
   "author": {
-    "title": "John Doe",
-    "photo": "/logo.png",
-    "description": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+    "title": "Yoo Young Lee",
+    "photo": "/YYL.jpg",
+    "description": "Curious learner - Openness, Kindness, and Connectedness",
     "contacts": [
       {
         "name": "github",
-        "contact": "alxshelepenok"
+        "contact": "yooylee"
       },
       {
         "name": "linkedin",
-        "contact": "alxshelepenok"
+        "contact": "yooyounglee"
       }
     ]
   }
