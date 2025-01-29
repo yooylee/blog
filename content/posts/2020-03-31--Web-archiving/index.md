@@ -1,4 +1,4 @@
-/Users/yooyounglee/blog/content/posts/2020-03-31--Web-archiving---
+---
 title: "Covid-19 Web Archiving at uOttawa"
 date: "2020-04-08"
 template: "post"
