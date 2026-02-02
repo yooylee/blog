@@ -4,7 +4,7 @@ template: "page"
 
 ---
 
-I am Yoo Young Lee, Head, Metadata and Processing at the University of Ottawa Library in Canada. This professional blog is my space to share insights on topics I am passionate about and document my journey of learning and growth.
+I am Yoo Young Lee, Head, Metadata and Cataloguing at the University of Ottawa Library in Canada. This professional blog is my space to share insights on topics I am passionate about and document my journey of learning and growth.
 
 I deeply value <b>openness, kindness,</b> and <b>connectedness</b>. As a lifelong learner, I continually seek to enhance my skills and expand my knowledge to make information, data, and tools more open and accessible. I believe kindness is essential to our shared humanity and emphasize the importance of relationships and collaboration in everything I do.
 
