@@ -78,7 +78,7 @@ Manually translating these subjects into French would be daunting at scale. To a
 
 *We tested this approach in 2025, but the consensus at the time was that it was not ready for production use, particularly for French cataloguing. However, some elements such as subject headings and call numbers performed reasonably well.
 We plan to test the tool again, but with a more targeted approach. Last year, we applied it across all fields, which resulted in significant redundancy. This time, we will focus on specific fields and on original cataloguing workflows in particular.
-Since most of our current work is copy cataloguing, the impact there is likely to be limited, but this new focus will allow us to better assess where the tool can meaningfully support original cataloguing work.
+Since most of our current work is copy cataloguing, the impact there is likely to be limited, but this new focus will allow us to better assess where the tool can meaningfully support original cataloguing work.*
 
 ### Summary
 
