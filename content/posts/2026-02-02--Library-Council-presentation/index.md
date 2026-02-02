@@ -80,6 +80,9 @@ Manually translating these subjects into French would be daunting at scale. To a
 We plan to test the tool again, but with a more targeted approach. Last year, we applied it across all fields, which resulted in significant redundancy. This time, we will focus on specific fields and on original cataloguing workflows in particular.
 Since most of our current work is copy cataloguing, the impact there is likely to be limited, but this new focus will allow us to better assess where the tool can meaningfully support original cataloguing work.
 
+### Summary
+
+I shared how the Metadata and Cataloguing team has been experimenting with AI to support metadata and cataloguing work. The examples focused on practical and limited use cases such as language identification, bilingual metadata enhancement, and targeted testing of AI-assisted tools. Rather than positioning AI as a replacement for professional judgement, this work explored where it can meaningfully support existing workflows while acknowledging current limitations and risks.
 
 
 
